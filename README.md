@@ -22,22 +22,22 @@ cd nodejs-demo-app
 Install dependencies:
 
 bash
-Copy code
+
 npm install
 Build the Docker image:
 
 bash
-Copy code
+
 docker build -t nodejs-demo-app:latest .
 Run the Docker container:
 
 bash
-Copy code
+
 docker run -p 3000:3000 nodejs-demo-app:latest
 Open a browser and visit:
 
 arduino
-Copy code
+
 http://localhost:3000
 CI/CD Pipeline
 Triggered on push to main branch
@@ -62,4 +62,5 @@ Notes
 Dockerfile must be named exactly Dockerfile (no .txt)
 
 Use GitHub Secrets for storing tokens; do not put them in code
+
 
